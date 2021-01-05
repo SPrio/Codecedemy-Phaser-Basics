@@ -5,16 +5,16 @@ function create() {
   let circle4 = this.add.circle(300, 400, 10, 0x00E030);
 
   // Add in a circle here!
-
+  let circle5= this.add.circle(260, 260, 60, 0xC0C0C0);
 }
 
 const config = {
-	type: Phaser.AUTO,
-	width: 450,
-	height: 600,
-	scene: {
+  type: Phaser.AUTO,
+  width: 450,
+  height: 600,
+  scene: {
     create
-	}
+  }
 }
 
 const game = new Phaser.Game(config)
