@@ -9,6 +9,9 @@ function create() {
 }
 
 // Create your update() function here
+update = () => {
+
+}
 
 const config = {
 	type: Phaser.AUTO,
