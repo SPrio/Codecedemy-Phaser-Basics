@@ -1,5 +1,5 @@
 create = () => {
-  
+  this.add.text(100,100, "Welcome to Game")
 }
 
 const config = {
