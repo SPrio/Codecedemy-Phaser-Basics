@@ -10,7 +10,7 @@ function create() {
 
 // Create your update() function here
 update = () => {
-
+  codey.x += 1
 }
 
 const config = {
