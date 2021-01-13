@@ -1,7 +1,7 @@
 const gameState = {
   onColor: 0xaaffaa,
-  offColor: 0xffaaaa
-}
+  offColor: 0xffaaaa,
+};
 
 function create() {
   gameState.rect1 = this.add.rectangle(200, 100, 100, 100, gameState.onColor);
@@ -10,9 +10,13 @@ function create() {
   // add the switchedOn state here
 
   // set gameState.rect2 as interactive here
+  gameState.rect2.setInteractive();
 
   // create the pointerup listener for rect2 here
-
+  gameState.rect2.on("pointerup", function () {
+    gameState.rect1.fillColor = gameState.offColor;
+    gameState.rect2.fillColor = gameState.onColor;
+  });
 }
 
 const config = {
@@ -21,8 +25,8 @@ const config = {
   height: 450,
   backgroundColor: 0x333333,
   scene: {
-    create
-  }
-}
+    create,
+  },
+};
 
-const game = new Phaser.Game(config)
+const game = new Phaser.Game(config);
