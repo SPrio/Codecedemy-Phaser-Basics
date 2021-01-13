@@ -21,6 +21,7 @@ const config = {
 	scene: {
     preload,
     create,
+    update
     // Include update here!
 	}
 }
