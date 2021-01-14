@@ -9,6 +9,7 @@ function preload() {
 
 function create() {
   gameState.codey = this.add.sprite(100, 100, "codey");
+  gameState.cursors = this.input.keyboard.createCursorKeys();
 }
 
 const config = {
