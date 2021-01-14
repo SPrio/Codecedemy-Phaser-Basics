@@ -40,6 +40,14 @@ function create() {
     paletteCircle.lineWidth = 2;
 
     /* add a click handler for each palette circle here */
+    paletteCircle.setInteractive();
+    paletteCircle.on(
+      "pointerup",
+      function () {
+        gameState.selectedColor = this.color;
+      },
+      { color }
+    );
   }
 }
 
