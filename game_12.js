@@ -1,3 +1,5 @@
+const gameState = {};
+
 const config={
   width: 400,
   height: 400,
