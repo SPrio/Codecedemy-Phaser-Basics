@@ -12,6 +12,12 @@ function create() {
   gameState.cursors = this.input.keyboard.createCursorKeys();
 }
 
+function update() {
+  if (gameState.cursors.down.isDown) {
+    gameState.codey.y += 1;
+  }
+}
+
 const config = {
   width: 400,
   height: 400,
