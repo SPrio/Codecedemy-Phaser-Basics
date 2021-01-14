@@ -1,6 +1,11 @@
 const gameState = {};
 
-preload = () => {};
+preload = () => {
+  this.load.image(
+    "codey",
+    "https://content.codecademy.com/courses/learn-phaser/codey.png"
+  );
+};
 
 const config = {
   width: 400,
