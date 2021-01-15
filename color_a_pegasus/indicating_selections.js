@@ -22,6 +22,8 @@ function create() {
     shape.on('pointerover', function(){
       this.setBlendMode(Phaser.BlendModes.SCREEN)
     })
+    shape.on('pointerout', function(){
+    })
   }
 
   // Setting up palette circles
