@@ -19,6 +19,8 @@ function create() {
 
     // Add 'pointerover' and 'pointerout'
     // handlers here
+    shape.on('pointerover', function(){
+    })
   }
 
   // Setting up palette circles
