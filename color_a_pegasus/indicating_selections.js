@@ -20,6 +20,7 @@ function create() {
     // Add 'pointerover' and 'pointerout'
     // handlers here
     shape.on('pointerover', function(){
+      this.setBlendMode(Phaser.BlendModes.SCREEN)
     })
   }
 
