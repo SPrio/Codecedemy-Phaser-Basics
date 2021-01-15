@@ -19,11 +19,12 @@ function create() {
 
     // Add 'pointerover' and 'pointerout'
     // handlers here
-    shape.on('pointerover', function(){
-      this.setBlendMode(Phaser.BlendModes.SCREEN)
-    })
-    shape.on('pointerout', function(){
-    })
+    shape.on("pointerover", function () {
+      this.setBlendMode(Phaser.BlendModes.SCREEN);
+    });
+    shape.on("pointerout", function () {
+      this.setBlendMode(Phaser.BlendModes.NORMAL);
+    });
   }
 
   // Setting up palette circles
