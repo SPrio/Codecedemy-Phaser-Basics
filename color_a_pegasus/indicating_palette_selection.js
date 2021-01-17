@@ -55,6 +55,16 @@ function create() {
 
     // Add 'pointerout' event to
     // paletteCircle here
+    paletteCircle.on(
+      "pointerout",
+      function () {
+        this.paletteCircle.strokeColor = 0x000000;
+        if (gameState.selectedColor === this.color) {
+          this.paletteCircle.strokeColor = 0xffc836;
+        }
+      },
+      { paletteCircle, color }
+    );
   }
 }
 
